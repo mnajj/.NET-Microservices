@@ -11,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseInMemoryDatabase("InMemeoryDb"));
+builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
 var app = builder.Build();
 
