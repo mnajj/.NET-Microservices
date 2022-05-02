@@ -7,5 +7,12 @@ namespace CommandsService.Controllers
   public class PlatformsController : ControllerBase
   {
     public PlatformsController() { }
+
+    [HttpPost]
+    public ActionResult TestInboundConnection()
+    {
+      Console.WriteLine("--> Inbound POST # Command Service");
+      return Ok("Inbound test of from Platforms Controler");
+    }
   }
 }
