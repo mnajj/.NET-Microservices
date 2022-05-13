@@ -5,12 +5,12 @@ using PlatformService;
 
 namespace CommandsService.SyncDataServices.Grpc
 {
-  public class PatformDataClient : IPlatformDataClient
+  public class PlatformDataClient : IPlatformDataClient
   {
     private readonly IConfiguration _config;
     private readonly IMapper _mapper;
 
-    public PatformDataClient(IConfiguration config, IMapper mapper)
+    public PlatformDataClient(IConfiguration config, IMapper mapper)
     {
       _config = config;
       _mapper = mapper;
